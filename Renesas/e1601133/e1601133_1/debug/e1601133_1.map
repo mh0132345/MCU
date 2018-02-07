@@ -1,0 +1,380 @@
+##########################################
+# (1) LINK INFORMATION                   #
+##########################################
+c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\bin\ln30.exe @U:\MCU\Renesas\e1601133\e1601133_1\debug\e1601133_1.m16cl
+
+# LINK FILE INFORMATION
+ncrt0 (U:\MCU\Renesas\e1601133\e1601133_1\debug\ncrt0.r30)
+	Feb  6 18:17:11 2018
+
+flashleds (U:\MCU\Renesas\e1601133\e1601133_1\debug\flashleds.r30)
+	Feb  6 18:16:51 2018
+
+hwsetup (U:\MCU\Renesas\e1601133\e1601133_1\debug\hwsetup.r30)
+	Feb  6 18:16:54 2018
+
+interrupts (U:\MCU\Renesas\e1601133\e1601133_1\debug\interrupts.r30)
+	Feb  6 18:16:57 2018
+
+lcd (U:\MCU\Renesas\e1601133\e1601133_1\debug\lcd.r30)
+	Feb  6 18:17:01 2018
+
+main (U:\MCU\Renesas\e1601133\e1601133_1\debug\main.r30)
+	Feb  6 18:17:05 2018
+
+resetprg (U:\MCU\Renesas\e1601133\e1601133_1\debug\resetprg.r30)
+	Feb  6 18:17:08 2018
+
+timeradc (U:\MCU\Renesas\e1601133\e1601133_1\debug\timeradc.r30)
+	Feb  6 18:17:11 2018
+
+_mbase (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib)
+	Jan  6 15:04:41 2010
+
+bcopy (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib)
+	Jan  6 15:04:43 2010
+
+bzero (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib)
+	Jan  6 15:04:44 2010
+
+mdata (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib)
+	Jan  6 15:04:55 2010
+
+
+##########################################
+# (2) SECTION INFORMATION                #
+##########################################
+# SECTION                        ATR TYPE    START  LENGTH ALIGN MODULENAME
+data_SE                          ABS DATA    000400 000000       ncrt0
+bss_SE                           REL DATA    000400 000000 2     ncrt0
+data_SO                          REL DATA    000400 000000       ncrt0
+bss_SO                           REL DATA    000400 000000       ncrt0
+data_NE                          REL DATA    000400 000000 2     ncrt0
+                                 REL DATA    000400 000002 2     interrupts
+                                 REL DATA    000402 00000A 2     main
+                                 REL DATA    00040C 000010 2     mdata
+bss_NE                           REL DATA    00041C 000000 2     ncrt0
+                                 REL DATA    00041C 000004 2     _mbase
+                                 REL DATA    000420 000008 2     mdata
+data_NO                          REL DATA    000428 000000       ncrt0
+                                 REL DATA    000428 000001       lcd
+                                 REL DATA    000429 000002       main
+bss_NO                           REL DATA    00042B 000000       ncrt0
+stack                            REL DATA    00042B 000600       ncrt0
+heap                             REL DATA    000A2B 000300       ncrt0
+rom_NE                           REL ROMDATA 000D2C 000000 2     ncrt0
+rom_NO                           REL ROMDATA 000D2C 000000       ncrt0
+data_FE                          ABS DATA    010000 000000       ncrt0
+bss_FE                           REL DATA    010000 000000 2     ncrt0
+data_FO                          REL DATA    010000 000000       ncrt0
+bss_FO                           REL DATA    010000 000000       ncrt0
+rom_FE                           ABS ROMDATA 0F0000 000000       ncrt0
+                                 REL ROMDATA 0F0000 00000A 2     main
+rom_FO                           REL ROMDATA 0F000A 000000       ncrt0
+                                 REL ROMDATA 0F000A 000016       main
+data_SEI                         REL ROMDATA 0F0020 000000       ncrt0
+data_SOI                         REL ROMDATA 0F0020 000000       ncrt0
+data_NEI                         REL ROMDATA 0F0020 000000       ncrt0
+                                 REL ROMDATA 0F0020 000002       interrupts
+                                 REL ROMDATA 0F0022 00000A       main
+                                 REL ROMDATA 0F002C 000010       mdata
+data_NOI                         REL ROMDATA 0F003C 000000       ncrt0
+                                 REL ROMDATA 0F003C 000001       lcd
+                                 REL ROMDATA 0F003D 000002       main
+data_FEI                         REL ROMDATA 0F003F 000000       ncrt0
+data_FOI                         REL ROMDATA 0F003F 000000       ncrt0
+switch_table                     REL ROMDATA 0F003F 000000       ncrt0
+program                          REL CODE    0F003F 000000       ncrt0
+                                 REL CODE    0F0040 000056 2     flashleds
+                                 REL CODE    0F0096 0000DF 2     hwsetup
+                                 REL CODE    0F0176 0000D0 2     interrupts
+                                 REL CODE    0F0246 0001E4 2     lcd
+                                 REL CODE    0F042A 0000F1 2     main
+                                 REL CODE    0F051C 00000A 2     resetprg
+                                 REL CODE    0F0526 000025 2     timeradc
+                                 REL CODE    0F054C 000035 2     bcopy
+                                 REL CODE    0F0582 000028 2     bzero
+interrupt                        REL CODE    0F05AA 000000       ncrt0
+                                 REL CODE    0F05AA 000113       ncrt0
+program_S                        REL CODE    0F06BD 000000       ncrt0
+vector                           ABS ROMDATA 0FFD00 000100       ncrt0
+svector                          ABS ROMDATA 0FFE00 000000       ncrt0
+fvector                          ABS ROMDATA 0FFFFC 000004       ncrt0
+# Total -------------------------------------------------------------------
+                                     DATA           00092B(0002347) Byte(s)
+                                     ROMDATA        000143(0000323) Byte(s)
+                                     CODE           00067E(0001662) Byte(s)
+
+##########################################
+# (3) GLOBAL LABEL INFORMATION           #
+##########################################
+$DisplayString     0f02f4  $LCD_nibble_writ   0f037e  $LCD_write         0f0352
+$exit              0f06ba  _ConfigureInterr   0f0176  _ConfigureOperat   0f00a4
+_ConfigurePortPi   0f00fe  _DisplayDelay      0f0404  _EnablePeriphera   0f00f0
+_FlashLEDs         0f0040  _HardwareSetup     0f0096  _INT_INT0          0f01b6
+_INT_INT1          0f01e6  _INT_INT2          0f0216  _Initialise        0f051c
+_InitialiseDispl   0f0246  _StartADC          0f052e  _StartTimer        0f053c
+_Statics_Test      0f04a2  _TimerA0Handler    0f018c  _TimerADC          0f0526
+_ToggleLEDs        0f008a  __mbase            00041c  __memt             000414
+__mnext            000420  __msize            000424  __pool             00040c
+_bcopy             0f054c  _bzero             0f0582  _count             00042a
+_exit              0f06ba  _gucKeyPressed     000429  _main              0f042a
+_ucReplace         0f0000  _ucStr             000402  dummy_int          0f06bc
+start              0f05aa  
+
+##########################################
+# (4) GLOBAL EQU SYMBOL INFORMATION      #
+##########################################
+__SB__           00000400  
+
+##########################################
+# (5) GLOBAL EQU BIT-SYMBOL INFORMATION  #
+##########################################
+
+##########################################
+# (6) LOCAL LABEL INFORMATION            #
+##########################################
+@ ncrt0 ( U:\MCU\Renesas\e1601133\e1601133_1\debug\ncrt0.r30 )
+@ flashleds ( U:\MCU\Renesas\e1601133\e1601133_1\debug\flashleds.r30 )
+@ hwsetup ( U:\MCU\Renesas\e1601133\e1601133_1\debug\hwsetup.r30 )
+@ interrupts ( U:\MCU\Renesas\e1601133\e1601133_1\debug\interrupts.r30 )
+@ lcd ( U:\MCU\Renesas\e1601133\e1601133_1\debug\lcd.r30 )
+@ main ( U:\MCU\Renesas\e1601133\e1601133_1\debug\main.r30 )
+@ resetprg ( U:\MCU\Renesas\e1601133\e1601133_1\debug\resetprg.r30 )
+@ timeradc ( U:\MCU\Renesas\e1601133\e1601133_1\debug\timeradc.r30 )
+@ _mbase ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ bcopy ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ bzero ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ mdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+
+##########################################
+# (7) LOCAL EQU SYMBOL INFORMATION       #
+##########################################
+@ ncrt0 ( U:\MCU\Renesas\e1601133\e1601133_1\debug\ncrt0.r30 )
+@ flashleds ( U:\MCU\Renesas\e1601133\e1601133_1\debug\flashleds.r30 )
+@ hwsetup ( U:\MCU\Renesas\e1601133\e1601133_1\debug\hwsetup.r30 )
+@ interrupts ( U:\MCU\Renesas\e1601133\e1601133_1\debug\interrupts.r30 )
+@ lcd ( U:\MCU\Renesas\e1601133\e1601133_1\debug\lcd.r30 )
+@ main ( U:\MCU\Renesas\e1601133\e1601133_1\debug\main.r30 )
+@ resetprg ( U:\MCU\Renesas\e1601133\e1601133_1\debug\resetprg.r30 )
+@ timeradc ( U:\MCU\Renesas\e1601133\e1601133_1\debug\timeradc.r30 )
+@ _mbase ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ bcopy ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ bzero ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ mdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+
+##########################################
+# (8) LOCAL EQU BIT-SYMBOL INFORMATION   #
+##########################################
+@ ncrt0 ( U:\MCU\Renesas\e1601133\e1601133_1\debug\ncrt0.r30 )
+@ flashleds ( U:\MCU\Renesas\e1601133\e1601133_1\debug\flashleds.r30 )
+@ hwsetup ( U:\MCU\Renesas\e1601133\e1601133_1\debug\hwsetup.r30 )
+@ interrupts ( U:\MCU\Renesas\e1601133\e1601133_1\debug\interrupts.r30 )
+@ lcd ( U:\MCU\Renesas\e1601133\e1601133_1\debug\lcd.r30 )
+@ main ( U:\MCU\Renesas\e1601133\e1601133_1\debug\main.r30 )
+@ resetprg ( U:\MCU\Renesas\e1601133\e1601133_1\debug\resetprg.r30 )
+@ timeradc ( U:\MCU\Renesas\e1601133\e1601133_1\debug\timeradc.r30 )
+@ _mbase ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ bcopy ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ bzero ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+@ mdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v545r01\lib30\nc30lib.lib )
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+data_SE
+                                  00000400  00000400         0   1
+bss_SE
+                                  00000400  00000400         0   2
+data_SO
+                                  00000400  00000400         0   1
+bss_SO
+                                  00000400  00000400         0   1
+data_NE
+                                  00000400  0000041b        1c   2
+bss_NE
+                                  0000041c  00000427         c   2
+data_NO
+                                  00000428  0000042a         3   1
+bss_NO
+                                  0000042b  0000042b         0   1
+stack
+                                  0000042b  00000a2a       600   1
+heap
+                                  00000a2b  00000d2a       300   1
+rom_NE
+                                  00000d2c  00000d2c         0   2
+rom_NO
+                                  00000d2c  00000d2c         0   1
+data_FE
+                                  00010000  00010000         0   1
+bss_FE
+                                  00010000  00010000         0   2
+data_FO
+                                  00010000  00010000         0   1
+bss_FO
+                                  00010000  00010000         0   1
+rom_FE
+                                  000f0000  000f0009         a   1
+rom_FO
+                                  000f000a  000f001f        16   1
+data_SEI
+                                  000f0020  000f0020         0   1
+data_SOI
+                                  000f0020  000f0020         0   1
+data_NEI
+                                  000f0020  000f003b        1c   1
+data_NOI
+                                  000f003c  000f003e         3   1
+data_FEI
+                                  000f003f  000f003f         0   1
+data_FOI
+                                  000f003f  000f003f         0   1
+switch_table
+                                  000f003f  000f003f         0   1
+program
+                                  000f003f  000f05a9       56b   1
+interrupt
+                                  000f05aa  000f06bc       113   1
+program_S
+                                  000f06bd  000f06bd         0   1
+vector
+                                  000ffd00  000ffdff       100   1
+svector
+                                  000ffe00  000ffe00         0   1
+fvector
+                                  000ffffc  000fffff         4   1
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=data_SE
+FILE=ncrt0
+                                  00000400  00000400         0
+  __SB__
+                                  00000400         0   none ,g         0
+
+SECTION=data_NE
+FILE=U:/MCU/Renesas/e1601133/e1601133_1/main
+                                  00000402  0000040b         a
+  _ucStr
+                                  00000402         a   data ,g         0
+
+FILE=mdata
+                                  0000040c  0000041b        10
+  __memt
+                                  00000414         0   none ,g         0
+  __pool
+                                  0000040c         0   none ,g         0
+
+SECTION=bss_NE
+FILE=ncrt0
+                                  0000041c  0000041c         0
+  __mbase
+                                  0000041c         0   none ,g         0
+
+FILE=mdata
+                                  00000420  00000427         8
+  __mnext
+                                  00000420         0   none ,g         0
+  __msize
+                                  00000424         0   none ,g         0
+
+SECTION=data_NO
+FILE=U:/MCU/Renesas/e1601133/e1601133_1/main
+                                  00000429  0000042a         2
+  _gucKeyPressed
+                                  00000429         1   data ,g         0
+  _count
+                                  0000042a         1   data ,g         0
+
+SECTION=rom_FE
+FILE=U:/MCU/Renesas/e1601133/e1601133_1/main
+                                  000f0000  000f0009         a
+  _ucReplace
+                                  000f0000         a   data ,g         0
+
+SECTION=program
+FILE=U:/MCU/Renesas/e1601133/e1601133_1/flashleds
+                                  000f0040  000f0095        56
+  _FlashLEDs
+                                  000f0040        49   func ,g         0
+
+FILE=U:/MCU/Renesas/e1601133/e1601133_1/hwsetup
+                                  000f0096  000f0174        df
+  _HardwareSetup
+                                  000f0096         e   func ,g         0
+  _ConfigureOperatingFrequency
+                                  000f00a4        4c   func ,g         0
+  _EnablePeripheralModules
+                                  000f00f0         d   func ,g         0
+
+FILE=U:/MCU/Renesas/e1601133/e1601133_1/interrupts
+                                  000f0176  000f0245        d0
+  _ConfigureInterrupts
+                                  000f0176        16   func ,g         0
+  _TimerA0Handler
+                                  000f018c        29   func ,g         0
+  _INT_INT0
+                                  000f01b6        31   func ,g         0
+  _INT_INT1
+                                  000f01e6        30   func ,g         0
+  _INT_INT2
+                                  000f0216        30   func ,g         0
+
+FILE=U:/MCU/Renesas/e1601133/e1601133_1/lcd
+                                  000f0246  000f0429       1e4
+  _InitialiseDisplay
+                                  000f0246        ae   func ,g         0
+  $DisplayString
+                                  000f02f4        5e   func ,g         0
+  $LCD_write
+                                  000f0352        2c   func ,g         0
+  $LCD_nibble_write
+                                  000f037e        86   func ,g         0
+  _DisplayDelay
+                                  000f0404        26   func ,g         0
+
+FILE=U:/MCU/Renesas/e1601133/e1601133_1/main
+                                  000f042a  000f051a        f1
+  _main
+                                  000f042a        78   func ,g         0
+  _Statics_Test
+                                  000f04a2        79   func ,g         0
+
+FILE=U:/MCU/Renesas/e1601133/e1601133_1/resetprg
+                                  000f051c  000f0525         a
+  _Initialise
+                                  000f051c         a   func ,g         0
+
+FILE=U:/MCU/Renesas/e1601133/e1601133_1/timeradc
+                                  000f0526  000f054a        25
+  _TimerADC
+                                  000f0526         7   func ,g         0
+  _StartADC
+                                  000f052e         e   func ,g         0
+
+FILE=bcopy
+                                  000f054c  000f0580        35
+  _bcopy
+                                  000f054c        35   func ,g         0
+
+FILE=bzero
+                                  000f0582  000f05a9        28
+  _bzero
+                                  000f0582        28   func ,g         0
+
+SECTION=interrupt
+FILE=ncrt0
+                                  000f05aa  000f06bc       113
+  $exit
+                                  000f06ba         0   none ,g         0
+  _exit
+                                  000f06ba         0   none ,g         0
+  dummy_int
+                                  000f06bc         0   none ,g         0
+

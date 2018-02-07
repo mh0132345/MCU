@@ -1,0 +1,5 @@
+-c
+-finfo
+-dir "U:\MCU\Renesas\e1601133\e1601133_1\debug"
+-Wall
+"U:\MCU\Renesas\e1601133\e1601133_1\lcd.c"

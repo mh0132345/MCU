@@ -1,0 +1,11 @@
+1a 1)output level
+
+p0 = 0x01;
+
+high: 4.4881 V
+low:  0.0056 V
+
+1a 2)input level
+
+high threshold: 2.2693 V
+low threshold:  2.2444 V

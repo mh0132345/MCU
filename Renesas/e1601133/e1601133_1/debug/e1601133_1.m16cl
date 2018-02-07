@@ -1,0 +1,12 @@
+-L "nc30lib"
+-G
+-MS
+-O "U:\MCU\Renesas\e1601133\e1601133_1\debug\e1601133_1.x30"
+"U:\MCU\Renesas\e1601133\e1601133_1\debug\ncrt0.r30"
+"U:\MCU\Renesas\e1601133\e1601133_1\debug\flashleds.r30"
+"U:\MCU\Renesas\e1601133\e1601133_1\debug\hwsetup.r30"
+"U:\MCU\Renesas\e1601133\e1601133_1\debug\interrupts.r30"
+"U:\MCU\Renesas\e1601133\e1601133_1\debug\lcd.r30"
+"U:\MCU\Renesas\e1601133\e1601133_1\debug\main.r30"
+"U:\MCU\Renesas\e1601133\e1601133_1\debug\resetprg.r30"
+"U:\MCU\Renesas\e1601133\e1601133_1\debug\timeradc.r30"
